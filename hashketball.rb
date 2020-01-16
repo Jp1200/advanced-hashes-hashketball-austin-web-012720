@@ -11,12 +11,18 @@ def game_hash
     {steals: },
     {blocks: },
     {slamm_dunks: } },
-    {:player_name2 => }
+              {:player_name2 => {} }
     ]
   },
   :away => {:team_name => "",
     :colors => [''],
-    :players => [{},{}]}}
+    :players => [{},{}]
+    
+  }
+    
+  }
+    
+  }
 end
 
 
