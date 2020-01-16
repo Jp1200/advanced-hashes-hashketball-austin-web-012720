@@ -242,6 +242,7 @@ def winning_team
   gamehash[:home][:players].each{|i| points1 += i[:points]}
   gamehash[:away][:players].each{|i| points2 += i[:points]}
   
+  
 end
 
 def player_with_longest_name
