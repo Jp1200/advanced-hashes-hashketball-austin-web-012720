@@ -198,8 +198,10 @@ def big_shoe_rebounds
   gamehash = game_hash
   # incorporate last method to return stats of guy with lasrgest shoe size 
   # compare player_index[:shoe].max
-  bigshoeman_name = gamehash.each{|key,value| gamehash[key][:players].max_by{|k,v| if k == :shoe 
-  v}}
+  bigshoeman_name = gamehash.each{|key,value| gamehash[key][:players].max_by{|k,v| if k == :shoe
+  v
+  end
+  }}
 end
 
 
