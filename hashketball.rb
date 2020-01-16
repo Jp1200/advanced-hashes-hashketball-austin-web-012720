@@ -249,5 +249,17 @@ def winning_team
 end
 
 end
+def player_with_longest_name
+   gamehash = game_hash
 
+    longestname = ""
+  pp gamehash[:home][:players].max_by{|i| i[:player_name].length}
+  if (gamehash[:home][:players].max_by{|i| i[:player_name].length} > gamehash[:away][:players].max_by{|i| i[:player_name].length})
+    
+     longestname = gamehash[:home][:players].max_by{|i| i[:player_name].length}[:player_name]
+  else 
+     longestname = gamehash[:away][:players].max_by{|i| i[:player_name].length}[:player_name]
+    end
+ return longestname
+end
 
