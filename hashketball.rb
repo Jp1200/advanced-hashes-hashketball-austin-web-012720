@@ -166,10 +166,10 @@ def player_numbers(team_name)
   jerseyarr = []
   if team_name == gamehash[:home][:team_name]
     gamehash[:home][:players].each{ |player|
-    jerseyarr << gamehash[:home][:players][player][:number]}
+    jerseyarr << player[:number]}
   elsif team_name == gamehash[:away][:team_name]
     gamehash[:away][:players].each{ |player|
-    jerseyarr << gamehash[:away][:players][player][:number]}
+    jerseyarr << player[:number]}
   end
   return jerseyarr
 end
