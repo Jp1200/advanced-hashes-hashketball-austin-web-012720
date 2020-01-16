@@ -202,6 +202,7 @@ def big_shoe_rebounds
   v
   end
   }}
+  pp bigshoeman_name
 end
 
 
