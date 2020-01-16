@@ -235,5 +235,22 @@ def most_points_scored
   
  return mostpointsname
 end
+def winning_team
+  
+end
 
+def player_with_longest_name
+   gamehash = game_hash
+
+ mostpointsname = ""
+
+  if (gamehash[:home][:players].max_by{|i| i[:points]}[:points] > gamehash[:away][:players].max_by{|i| i[:points]}[:points])
+    
+     mostpointsname = gamehash[:home][:players].max_by{|i| i[:points]}[:player_name]
+  else 
+     mostpointsname = gamehash[:away][:players].max_by{|i| i[:points]}[:player_name]
+  end
+  
+ return mostpointsname
+end
 
