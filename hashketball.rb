@@ -170,6 +170,8 @@ def player_numbers(team_name)
   elsif team_name == gamehash[:away][:team_name]
     gamehash[:away][:players].each{ |player|
     jerseyarr << gamehash[:away][:players][player][:number]}
+  end
+  return jerseyarr
 end
 
 
