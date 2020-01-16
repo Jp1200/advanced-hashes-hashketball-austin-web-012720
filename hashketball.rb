@@ -111,10 +111,10 @@ def num_points_scored(player_name)
   
     player_index = 0 
     while player_index < gamehash[row_index][:players].length do 
-      if player_name == gamehash[:home][:players][player_index]
+      if player_name == gamehash[:home][:players][player_index][:player_name]
       score = gamehash[:home][:players][player_index][3]
-      elsif player_index == gamehash[:away][:players][player_index]
-      score = gamehash[:away][:players][player_index]
+      elsif player_index == gamehash[:away][:players][player_index][:player_name]
+      score = gamehash[:away][:players][player_index][3]
       end
       player_index += 1 
     end
