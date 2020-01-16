@@ -221,5 +221,18 @@ def big_shoe_rebounds
 
 end
 
+def most_points_scored
+  gamehash = game_hash
 
+ mostpointsname = ""
+
+  if (gamehash[:home][:players].max_by{|i| i[:points]}[:points] > gamehash[:away][:players].max_by{|i| i[:points]}[:points])
+    
+     mostpointsname = gamehash[:home][:players].max_by{|i| i[:points]}[:player_name]
+  else 
+     mostpointsname = gamehash[:away][:players].max_by{|i| i[:points]}[:player_name]
+  end
+  
+ return player_stats(mostpointsname)[:points]
+end
 
