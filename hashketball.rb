@@ -182,12 +182,12 @@ def player_stats(player_name)
       if player_name == gamehash[:home][:players][player_index][:player_name]
       
       gamehash[:home][:players][player_index].each{|key, value| next if key == player_name
-       playerstat << key, value
+       playerstat << key, value}
       
       elsif player_name == gamehash[:away][:players][player_index][:player_name]
       
        gamehash[:away][:players][player_index].each{|key, value| next if key == player_name
-       playerstat << key, value
+       playerstat << key, value}
       
       end
       player_index += 1 
