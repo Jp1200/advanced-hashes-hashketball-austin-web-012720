@@ -176,7 +176,20 @@ end
 def player_stats(player_name)
   gamehash = game_hash
   playerstat = {}
-  
+  player_index = 0 
+    while player_index < gamehash[:home][:players].length do 
+       
+      if player_name == gamehash[:home][:players][player_index][:player_name]
+      
+      playerstat << gamehash[:home][:players][player_index]
+      
+      elsif player_name == gamehash[:away][:players][player_index][:player_name]
+      
+      playerstat << gamehash[:away][:players][player_index][:points]
+      
+      end
+      player_index += 1 
+    end
 end 
 
 
