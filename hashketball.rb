@@ -199,17 +199,20 @@ def big_shoe_rebounds
   # incorporate last method to return stats of guy with lasrgest shoe size 
   # compare player_index[:shoe].max
   bigshoename = ""
-  i = 0 
-  while i < gamehash[:home][:players].length do 
-    shoesize = 0
-    if shoesize < gamehashgamehash[:home][:players][i][:shoe]
-    shoesize = gamehashgamehash[:home][:players][i][:shoe]
-    elsif shoesize < gamehash[:away][:players][i][:shoe]
-    shoesize = gamehashgamehash[:home][:players][i][:shoe]
-    end
-  i += 1 
-  end
-bigshoename = 
+ # i = 0 
+ # while i < gamehash[:home][:players].length do 
+  #  shoesize = 0
+  #  if shoesize < gamehashgamehash[:home][:players][i][:shoe]
+  #  shoesize = gamehashgamehash[:home][:players][i][:shoe]
+  #  elsif shoesize < gamehash[:away][:players][i][:shoe]
+  #  shoesize = gamehashgamehash[:home][:players][i][:shoe]
+  #  end
+ # i += 1 
+  #end
+  if gamehash[:home]
+  
+
+
 end
 
 
