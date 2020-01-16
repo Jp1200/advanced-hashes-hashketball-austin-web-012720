@@ -240,6 +240,7 @@ def winning_team
   points1 = 0
   points2 = 0 
   gamehash[:home][:players].each{|i| points1 += i[:points]}
+  gamehash[:away][:players].each{|i| points2 += i[:points]}
   
 end
 
