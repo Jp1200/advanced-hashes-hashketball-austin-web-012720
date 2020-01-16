@@ -108,7 +108,7 @@ def num_points_scored(player_name)
   # gamehash[:home][:players]
   row_index = 0 
   score = 0 
-  gamehash = game_hash
+  game_hash
     player_index = 0 
     while player_index < gamehash[row_index][:players].length do 
        
