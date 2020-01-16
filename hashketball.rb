@@ -265,4 +265,15 @@ end
 def long_name_steals_a_ton?
   longest_name = player_with_longest_name
   
+  
+    if (gamehash[:home][:players].max_by{|i| i[:steals]}[:steals] > gamehash[:away][:players].max_by{|i| i[:steals]}[:steals])
+    
+     moststealsname = gamehash[:home][:players].max_by{|i| i[:steals]}[:player_name]
+  else 
+     moststealsname = gamehash[:away][:players].max_by{|i| i[:steals]}[:player_name]
+  end
+  if longest_name == moststealsname
+    return true
+  else
+    false 
 end
