@@ -144,6 +144,11 @@ def team_colors(team_name)
        return gamehash[:home][:colors]
      end
    }
+   gamehash[:away].each{ |key, value|
+     if value == team_name
+       return gamehash[:away][:colors]
+     end
+   }
   
   
 end
