@@ -206,9 +206,8 @@ def big_shoe_rebounds
     shoesize = gamehashgamehash[:home][:players][i][:shoe]
     elsif shoesize < gamehash[:away][:players][i][:shoe]
     shoesize = gamehashgamehash[:home][:players][i][:shoe]
-      
-  
-  
+  end
+  i += 1 
 end
 end
 
