@@ -105,7 +105,7 @@ def game_hash
 end
 def num_points_scored(player_name)
   gamehash = game_hash
-  pp gamehash[:home][:players][3][:score]
+  pp gamehash[:home][:players]
   row_index = 0 
   score = 0 
  
