@@ -12,8 +12,8 @@ def game_hash
       blocks: ,
       slam_dunks:   },
     ],
-  :away => {:team_name => "",
-    :colors => [''],
+  :away => {:team_name => "Charlotte Hornets",
+    :colors => ['Turquoise', 'Purple'],
     :players => [{},{}]
     
   }
