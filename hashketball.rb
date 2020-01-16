@@ -210,7 +210,10 @@ def big_shoe_rebounds
  # i += 1 
   #end
   if gamehash[:home][:players].max_by{|i| i[:shoe]} > gamehash[:away][:players].max_by{|i| i[:shoe]}
-    bigshoename = 
+    bigshoename = gamehash[:home][:players].max_by{|i| i[:shoe]}[:player_name]
+  else 
+    bigshoename = gamehash[:away][:players].max_by{|i| i[:shoe]}[:player_name]
+  end
   
 
 
