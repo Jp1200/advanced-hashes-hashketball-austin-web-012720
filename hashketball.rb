@@ -233,6 +233,6 @@ def most_points_scored
      mostpointsname = gamehash[:away][:players].max_by{|i| i[:points]}[:player_name]
   end
   
- return player_stats(mostpointsname)[:points]
+ return mostpointsname
 end
 
