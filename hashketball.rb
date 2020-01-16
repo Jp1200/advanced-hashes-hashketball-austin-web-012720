@@ -140,7 +140,9 @@ end
 def team_colors(team_name)
   gamehash = game_hash
    gamehash[:home].each{ |key, value|
-     pp "Key = #{key}, Value = #{value}"
+     if value == team_name
+       return gamehash[:home][:colors]
+     end
    }
   
   
