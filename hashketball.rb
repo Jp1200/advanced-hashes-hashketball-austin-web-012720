@@ -213,7 +213,7 @@ def big_shoe_rebounds
     
     pp bigshoename = gamehash[:home][:players].max_by{|i| i[:shoe]}[:player_name]
   else 
-    bigshoename = gamehash[:away][:players].max_by{|i| i[:shoe]}[:player_name]
+    pp bigshoename = gamehash[:away][:players].max_by{|i| i[:shoe]}[:player_name]
   end
 
  # return player_stats(bigshoename)[:rebounds]
