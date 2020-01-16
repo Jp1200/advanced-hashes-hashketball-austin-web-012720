@@ -160,6 +160,7 @@ def team_names
     names << gamehash[i][:team_name]
     i += 1 
   end
+  return names
 end
 
 
