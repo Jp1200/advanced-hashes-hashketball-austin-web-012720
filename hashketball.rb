@@ -104,11 +104,11 @@ def game_hash
   return gamehash # end of gamehash
 end
 def num_points_scored(player_name)
- 
+  gamehash = game_hash
   pp gamehash[:home][:players][3][:score]
   row_index = 0 
   score = 0 
-  game_hash
+ 
     player_index = 0 
     while player_index < gamehash[row_index][:players].length do 
        
