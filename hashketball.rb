@@ -263,6 +263,7 @@ def player_with_longest_name
  return longestname
 end
 def long_name_steals_a_ton?
+  gamehash = game_hash
   longest_name = player_with_longest_name
   
   
