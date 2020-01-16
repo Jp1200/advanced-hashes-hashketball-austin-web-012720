@@ -100,10 +100,12 @@ def game_hash
     
   
     
-  } # end of gamehash
+  }
+  return gamehash# end of gamehash
 end
 def num_points_scored(player_name)
   gamehash = game_hash
+  pp gamehash
   row_index = 0 
   score = 0 
   while row_index < gamehash.length do
