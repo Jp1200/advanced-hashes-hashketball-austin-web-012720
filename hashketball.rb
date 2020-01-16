@@ -241,7 +241,10 @@ def winning_team
   points2 = 0 
   gamehash[:home][:players].each{|i| points1 += i[:points]}
   gamehash[:away][:players].each{|i| points2 += i[:points]}
-  
+  if points1 > points2 
+    return gamehash[:home][:team_name]
+  else
+    return gamehash[:away][:team_name]
   
 end
 
