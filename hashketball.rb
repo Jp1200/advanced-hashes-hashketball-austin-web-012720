@@ -101,7 +101,7 @@ def game_hash
   
     
   }
-  return gamehash# end of gamehash
+  return gamehash # end of gamehash
 end
 def num_points_scored(player_name)
   gamehash = game_hash
