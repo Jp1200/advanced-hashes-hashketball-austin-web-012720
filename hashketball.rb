@@ -195,6 +195,7 @@ def player_stats(player_name)
     return playerstat
 end 
 def big_shoe_rebounds
+  gamehash = game_hash
   
 end
 
