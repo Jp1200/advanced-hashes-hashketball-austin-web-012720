@@ -234,6 +234,7 @@ def most_points_scored
   
  return mostpointsname
 end
+
 def winning_team
   gamehash = game_hash
   points1 = 0
