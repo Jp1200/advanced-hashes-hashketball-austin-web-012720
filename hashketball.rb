@@ -181,7 +181,7 @@ def player_stats(player_name)
        
       if player_name == gamehash[:home][:players][player_index][:player_name]
       
-      playerstat << gamehash[:home][:players][player_index]
+      playerstat << gamehash[:home][:players][player_index].except()
       
       elsif player_name == gamehash[:away][:players][player_index][:player_name]
       
