@@ -194,6 +194,7 @@ def player_stats(player_name)
     end
     return playerstat
 end 
+
 def big_shoe_rebounds
   gamehash = game_hash
   # incorporate last method to return stats of guy with lasrgest shoe size 
@@ -217,7 +218,6 @@ def big_shoe_rebounds
   end
   
  return player_stats(bigshoename)[:rebounds]
-
 
 end
 def most_points_scored
