@@ -115,6 +115,7 @@ def num_points_scored(player_name)
     end
     row_index += 1
   end
+  return score
 end
 
 
