@@ -129,9 +129,9 @@ def shoe_size(player_name)
     while player_index < gamehash[:home][:players].length do 
        
       if player_name == gamehash[:home][:players][player_index][:player_name]
-      score = gamehash[:home][:players][player_index][:shoe]
+      ss = gamehash[:home][:players][player_index][:shoe]
       elsif player_name == gamehash[:away][:players][player_index][:player_name]
-      score = gamehash[:away][:players][player_index][:shoe]
+      ss = gamehash[:away][:players][player_index][:shoe]
       end
       player_index += 1 
     end
