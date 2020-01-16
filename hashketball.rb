@@ -173,7 +173,10 @@ def player_numbers(team_name)
   end
   return jerseyarr
 end
-def 
+def player_stats(player_name)
+  gamehash = game_hash
+  
+end 
 
 
 
