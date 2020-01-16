@@ -155,11 +155,9 @@ end
 def team_names
   gamehash = game_hash
   names = []
-  i = 0 
-  while i < gamehash.length do 
-    names << gamehash[i][:team_name]
-    i += 1 
-  end
+  names << gamehash[:home][:team_name]
+  names << gamehash[:away][:team_name]
+  
   return names
 end
 
