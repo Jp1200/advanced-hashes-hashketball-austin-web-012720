@@ -190,6 +190,7 @@ def player_stats(player_name)
       end
       player_index += 1 
     end
+    return playerstat
 end 
 
 
